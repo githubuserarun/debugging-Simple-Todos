@@ -3,12 +3,28 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  margin-bottom: 20px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+  padding: 5px;
+}
+.todo-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.title {
+.todo-Title,
+.editable-input {
   color: #000000;
   font-family: 'Roboto';
-  font-size: 16px;
+  font-size: 20px;
+  width: 400px;
+}
+
+.title:checked + span {
+  text-decoration: line-through;
 }
 
 @media screen and (min-width: 768px) {
@@ -17,7 +33,7 @@
   }
 }
 
-.delete-btn {
+.btn {
   background-color: #ffffff;
   color: #ff0b37;
   font-family: 'Roboto';
@@ -34,7 +50,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .delete-btn {
+  .btn {
     font-size: 18px;
     padding-top: 8px;
     padding-left: 16px;
